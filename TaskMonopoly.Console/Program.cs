@@ -37,6 +37,10 @@ try
     ShowResult_2InConsole(result_2);
 
     Task.WaitAll(writeResult_1Task, writeResult_2Task);
+
+    Console.WriteLine();
+    Console.WriteLine("Press any key to close this window . . .");
+    Console.ReadKey();
 }
 catch (Exception ex)
 {
