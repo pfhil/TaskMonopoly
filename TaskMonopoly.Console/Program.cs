@@ -43,6 +43,11 @@ catch (Exception ex)
     Console.WriteLine($"Произошло исключение - {ex.Message}");
 }
 
+Console.WriteLine();
+Console.WriteLine("Press any key to close this window . . .");
+Console.ReadKey();
+
+
 static void ShowResult_1InConsole(GroupListVm result)
 {
     Console.WriteLine("- Сгруппировать все паллеты по сроку годности, отсортировать по возрастанию срока годности, в каждой группе отсортировать паллеты по весу.");
