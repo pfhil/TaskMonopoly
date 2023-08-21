@@ -1,14 +1,15 @@
-﻿namespace TaskMonopoly.Domain.Entities
+﻿using TaskMonopoly.Domain.Common;
+
+namespace TaskMonopoly.Domain.Entities
 {
-    public class Pallet
+    public class Pallet : BaseContainer
     {
-        public Guid Id { get; set; }
-        public float Width { get; set; }
-        public float Height { get; set; }
-        public float Depth { get; set; }
-        public float Weight => Boxes.Sum(box => box.Weight) + 30;
-        public IList<Box> Boxes { get; set; }
+        public IList<Box> Boxes { get; set; } = new List<Box>();
+
+        public override float Weight => Boxes.Sum(box => box.Weight) + 30;
+
         public DateOnly ExpirationDate => Boxes.Min(box => box.ExpirationDate);
-        public float Volume => Boxes.Sum(box => box.Volume) + Width * Height * Depth;
+
+        public override float Volume => Boxes.Sum(box => box.Volume) + base.Volume;
     }
 }

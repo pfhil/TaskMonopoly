@@ -1,18 +1,15 @@
-﻿using TaskMonopoly.Domain.Exceptions;
+﻿using TaskMonopoly.Domain.Common;
+using TaskMonopoly.Domain.Exceptions;
 
 namespace TaskMonopoly.Domain.Entities
 {
-    public class Box
+    public class Box : BaseContainer
     {
         private DateOnly? _expirationDate;
         private DateOnly? _productionDate;
-        public Guid Id { get; set; }
+
         public Pallet Pallet { get; set; }
         public Guid PalletId { get; set; }
-        public float Width { get; set; }
-        public float Height { get; set; }
-        public float Depth { get; set; }
-        public float Weight { get; set; }
 
         public DateOnly ExpirationDate
         {
@@ -32,7 +29,5 @@ namespace TaskMonopoly.Domain.Entities
                 }
             }
         }
-
-        public float Volume => Width * Height * Depth;
     }
 }
