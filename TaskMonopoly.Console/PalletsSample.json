@@ -1,7 +1,7 @@
 {
   "Pallets": [
     {
-      "Id": "50C238A7-E7CE-4A82-918C-A62B9A458CE7", 
+      "Id": "50C238A7-E7CE-4A82-918C-A62B9A458CE7",
       "Width": 12.4,
       "Height": 3.2,
       "Depth": 7.2,
@@ -72,6 +72,13 @@
           "Depth": 5.33,
           "Weight": 6.1,
           "ExpirationDate": "2028-09-10"
+        },
+        {
+          "Width": 3.52,
+          "Height": 2,
+          "Depth": 1.33,
+          "Weight": 6.1,
+          "ExpirationDate": "2028-09-10"
         }
       ]
     },
@@ -83,10 +90,24 @@
       "Boxes": [
         {
           "Width": 3.52,
+          "Height": 4.64,
+          "Depth": 5.33,
+          "Weight": 15,
+          "ExpirationDate": "2027-09-10"
+        },
+        {
+          "Width": 3.52,
           "Height": 4,
           "Depth": 5.33,
           "Weight": 15,
           "ExpirationDate": "2028-09-10"
+        },
+        {
+          "Width": 3.52,
+          "Height": 3.2,
+          "Depth": 5.11,
+          "Weight": 15,
+          "ExpirationDate": "2026-09-10"
         }
       ]
     },
@@ -96,6 +117,20 @@
       "Height": 3.2,
       "Depth": 7.2,
       "Boxes": [
+        {
+          "Width": 3.52,
+          "Height": 1,
+          "Depth": 3,
+          "Weight": 3.1,
+          "ExpirationDate": "2025-09-10"
+        },
+        {
+          "Width": 3.52,
+          "Height": 1,
+          "Depth": 5.33,
+          "Weight": 3.1,
+          "ExpirationDate": "2025-09-10"
+        },
         {
           "Width": 3.52,
           "Height": 10,
@@ -174,6 +209,64 @@
           "Height": 7.26,
           "Depth": 7.25,
           "Weight": 17,
+          "ExpirationDate": "2023-04-02"
+        },
+        {
+          "Width": 12.4,
+          "Height": 8.32,
+          "Depth": 2.2,
+          "Weight": 2.2,
+          "ExpirationDate": "2023-06-27"
+        }
+      ]
+    },
+    {
+      "Id": "08F57CF1-E2FD-4956-A3B7-D545F6C6EB65",
+      "Width": 50.4,
+      "Height": 5.2,
+      "Depth": 22.2,
+      "Boxes": [
+        {
+          "Width": 13.4,
+          "Height": 2.2,
+          "Depth": 10.1,
+          "Weight": 12.67,
+          "ExpirationDate": "2023-02-13"
+        },
+        {
+          "Width": 30,
+          "Height": 7.26,
+          "Depth": 7.25,
+          "Weight": 13,
+          "ExpirationDate": "2023-04-02"
+        },
+        {
+          "Width": 12.4,
+          "Height": 8.32,
+          "Depth": 2.2,
+          "Weight": 2.2,
+          "ExpirationDate": "2023-06-27"
+        }
+      ]
+    },
+    {
+      "Id": "53B9D251-8F81-4512-9E66-120F184CBA26",
+      "Width": 50.4,
+      "Height": 5.2,
+      "Depth": 22.2,
+      "Boxes": [
+        {
+          "Width": 13.4,
+          "Height": 2.2,
+          "Depth": 10.1,
+          "Weight": 2.67,
+          "ExpirationDate": "2023-02-13"
+        },
+        {
+          "Width": 30,
+          "Height": 7.26,
+          "Depth": 7.25,
+          "Weight": 3,
           "ExpirationDate": "2023-04-02"
         },
         {
@@ -268,6 +361,54 @@
           "Height": 4,
           "Depth": 5,
           "Weight": 5,
+          "ProductionDate": "2023-05-05",
+          "ExpirationDate": "2023-07-01"
+        }
+      ]
+    },
+    {
+      "Id": "F7865CB6-066D-4C15-A63F-FCC7BE85B0ED",
+      "Width": 12,
+      "Height": 10,
+      "Depth": 8,
+      "Boxes": [
+        {
+          "Width": 3,
+          "Height": 4,
+          "Depth": 5,
+          "Weight": 1,
+          "ProductionDate": "2023-01-01",
+          "ExpirationDate": "2023-07-01"
+        },
+        {
+          "Width": 3,
+          "Height": 4,
+          "Depth": 5,
+          "Weight": 5,
+          "ProductionDate": "2023-02-02",
+          "ExpirationDate": "2023-07-01"
+        },
+        {
+          "Width": 3,
+          "Height": 4,
+          "Depth": 5,
+          "Weight": 3,
+          "ProductionDate": "2023-03-03",
+          "ExpirationDate": "2023-07-01"
+        },
+        {
+          "Width": 3,
+          "Height": 4,
+          "Depth": 5,
+          "Weight": 5,
+          "ProductionDate": "2023-04-04",
+          "ExpirationDate": "2023-07-01"
+        },
+        {
+          "Width": 3,
+          "Height": 4,
+          "Depth": 5,
+          "Weight": 2,
           "ProductionDate": "2023-05-05",
           "ExpirationDate": "2023-07-01"
         }

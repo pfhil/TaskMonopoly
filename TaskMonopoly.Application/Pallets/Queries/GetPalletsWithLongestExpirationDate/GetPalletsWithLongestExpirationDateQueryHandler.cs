@@ -38,7 +38,9 @@ namespace TaskMonopoly.Application.Pallets.Queries.GetPalletsWithLongestExpirati
                 }
             }
 
-            return palletsWithBoxesLongestExpirationDate.OrderBy(pallet => pallet.Volume).Select(pallet => _mapper.Map<PalletVm>(pallet));
+            palletsWithBoxesLongestExpirationDate.ForEach(pallet => pallet.Boxes = pallet.Boxes.OrderBy(box => box.Volume).ToList());
+
+            return palletsWithBoxesLongestExpirationDate.Select(pallet => _mapper.Map<PalletVm>(pallet));
         }
     }
 }

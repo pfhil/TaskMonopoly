@@ -18,7 +18,7 @@ namespace TaskMonopoly.Tests.Pallets.Queries
             //Assert
             result.Count.ShouldBe(3);
             result.ShouldAllBe(pallet => GuidsOfPalletsWithLongestExpirationDate.Contains(pallet.Id));
-            result.Select(pallet => pallet.Volume).ShouldBeInOrder(SortDirection.Ascending);
+            result.ForEach(pallet => pallet.Boxes.Select(box => box.Volume).ShouldBeInOrder(SortDirection.Ascending));
         }
     }
 }

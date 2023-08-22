@@ -74,11 +74,11 @@ static void ShowResult_2InConsole(IEnumerable<PalletVm> result)
 
     foreach (var palletVm in result)
     {
-        Console.WriteLine($"Паллета - {palletVm.Id}      Объем - {palletVm.Volume}");
+        Console.WriteLine($"Паллета - {palletVm.Id}");
         Console.WriteLine("Коробки в паллете:");
         foreach (var boxVm in palletVm.Boxes)
         {
-            Console.WriteLine($"Id - {boxVm.Id}      Срок годности - {boxVm.ExpirationDate}");
+            Console.WriteLine($"Id - {boxVm.Id}      Срок годности - {boxVm.ExpirationDate}      Объем - {boxVm.Volume}");
         }
 
         Console.WriteLine();
