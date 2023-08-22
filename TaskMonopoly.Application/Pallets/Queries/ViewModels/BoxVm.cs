@@ -13,7 +13,7 @@ namespace TaskMonopoly.Application.Pallets.Queries.ViewModels
         public float Weight { get; set; }
         public DateOnly ExpirationDate { get; set; }
         public DateOnly? ProductionDate { get; set; }
-        public float Volume => Width * Height * Depth;
+        public float Volume { get; set; }
 
         public void Mapping(Profile profile)
         {
@@ -31,7 +31,9 @@ namespace TaskMonopoly.Application.Pallets.Queries.ViewModels
                 .ForMember(boxVm => boxVm.ExpirationDate,
                     opt => opt.MapFrom(box => box.ExpirationDate))
                 .ForMember(boxVm => boxVm.ProductionDate,
-                    opt => opt.MapFrom(box => box.ProductionDate));
+                    opt => opt.MapFrom(box => box.ProductionDate))
+                .ForMember(boxVm => boxVm.Volume,
+                    opt => opt.MapFrom(box => box.Volume));
         }
     }
 }

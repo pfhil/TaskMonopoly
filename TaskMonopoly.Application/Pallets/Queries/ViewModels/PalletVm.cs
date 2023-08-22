@@ -10,10 +10,10 @@ namespace TaskMonopoly.Application.Pallets.Queries.ViewModels
         public float Width { get; set; }
         public float Height { get; set; }
         public float Depth { get; set; }
-        public float Weight => Boxes.Sum(box => box.Weight) + 30;
-        public IList<BoxVm> Boxes { get; set; }
-        public DateOnly ExpirationDate => Boxes.Min(box => box.ExpirationDate);
-        public float Volume => Boxes.Sum(box => box.Volume) + Width * Height * Depth;
+        public float Weight { get; set; }
+        public IList<BoxVm> Boxes { get; set; } = new List<BoxVm>();
+        public DateOnly ExpirationDate { get; set; }
+        public float Volume { get; set; }
 
         public void Mapping(Profile profile)
         {
@@ -27,7 +27,13 @@ namespace TaskMonopoly.Application.Pallets.Queries.ViewModels
                 .ForMember(palletVm => palletVm.Depth,
                     opt => opt.MapFrom(pallet => pallet.Depth))
                 .ForMember(palletVm => palletVm.Boxes,
-                    opt => opt.MapFrom(pallet => pallet.Boxes));
+                    opt => opt.MapFrom(pallet => pallet.Boxes))
+                .ForMember(palletVm => palletVm.Volume,
+                    opt => opt.MapFrom(pallet => pallet.Volume))
+                .ForMember(palletVm => palletVm.ExpirationDate,
+                    opt => opt.MapFrom(pallet => pallet.ExpirationDate))
+                .ForMember(palletVm => palletVm.Weight,
+                    opt => opt.MapFrom(pallet => pallet.Weight));
         }
     }
 }
